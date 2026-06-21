@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用简明指南 · 爱游戏</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    /* hero section */
+    .hero {
+      background: linear-gradient(145deg, #ffffff, #f7f9fc);
+      border-radius: 28px;
+      padding: 3.2rem 2.4rem;
+      margin-bottom: 2.8rem;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.03), 0 1px 4px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 560;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.8rem;
+      color: #111827;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0.6rem auto 1.8rem;
+      font-size: 1.15rem;
+      color: #4b5563;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: #eef2f5;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      color: #374151;
+      border: 1px solid #d1d9e0;
+      letter-spacing: 0.3px;
+    }
+
+    /* card style */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      border: 1px solid #e6eaef;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 520;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #eaeef2;
+      letter-spacing: -0.01em;
+      color: #1e293b;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 1.2rem 0 0.6rem;
+      color: #1e293b;
+    }
+
+    .card p, .card li {
+      color: #374151;
+      margin-bottom: 0.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.3rem;
+      margin-top: 0.4rem;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    .highlight-link {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 480;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .highlight-link:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      color: #1e293b;
+    }
+
+    .faq-a {
+      padding-left: 0.2rem;
+      color: #4b5563;
+    }
+
+    .footnote {
+      margin-top: 2.4rem;
+      padding: 1.6rem 0 0.6rem;
+      border-top: 1px solid #dce1e8;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .footnote a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 460;
+    }
+
+    .footnote a:hover {
+      text-decoration: underline;
+    }
+
+    .notice-badge {
+      background: #f0f3f7;
+      border-radius: 40px;
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      font-size: 0.8rem;
+      color: #2c3e50;
+      border: 1px solid #d4dce6;
+      margin-bottom: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.2rem 0.9rem;
+      }
+      .hero {
+        padding: 2rem 1.2rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1.4rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero 区 -->
+  <div class="hero">
+    <span class="hero-tag">简明指南 · 常用参考</span>
+    <h1>关于爱游戏，一篇就够了</h1>
+    <p>如果你正在寻找适合日常使用的游戏服务，这份说明页整理了基本概念、使用方式和常见提醒，帮助你快速了解。</p>
+  </div>
+
+  <!-- 卡片区域 -->
+  <div class="card-grid">
+
+    <!-- 优势区：从实用性角度描述 -->
+    <div class="card">
+      <h2>为什么选择这样的服务</h2>
+      <p>很多玩家希望有一个集中、方便的使用方式。通过<strong>爱游戏</strong>这类平台，你可以更直接地浏览和体验不同类型的游戏内容，减少在多处切换的麻烦。</p>
+      <ul>
+        <li><strong>整合性</strong>——将多种游戏信息或入口放在一起，节省查找时间。</li>
+        <li><strong>操作直观</strong>——页面结构清晰，分类和导航设计贴近日常习惯。</li>
+        <li><strong>持续更新</strong>——内容会随着版本或活动定期调整，保持可用性。</li>
+      </ul>
+      <p style="margin-top:1rem;">当然，每个人的需求不同，你可以根据自己的偏好判断是否适合。</p>
+    </div>
+
+    <!-- 说明区：从“简明指南”角度展开 -->
+    <div class="card">
+      <h2>使用前可以了解的几个要点</h2>
+      <p>如果你是第一次接触，下面这些信息或许对你有帮助：</p>
+      <ol>
+        <li><strong>访问方式</strong>：直接在浏览器中打开对应地址。你可以把 <a href="https://index-app-ayx.com" class="highlight-link">爱游戏</a> 添加到书签，方便以后快速进入。</li>
+        <li><strong>界面布局</strong>：主要模块包括游戏分类、热门推荐和个人中心（若有登录功能）。不同设备上显示会自适应。</li>
+        <li><strong>账户相关</strong>：部分功能可能需要注册或登录，建议使用常用邮箱，并保管好密码。</li>
+        <li><strong>游戏加载</strong>：部分游戏需要稳定的网络环境，如果遇到加载问题，可以检查网络或尝试刷新页面。</li>
+      </ol>
+      <p style="margin-top:0.6rem;">遇到具体疑问时，可以查看页面内的帮助或联系客服渠道。</p>
+    </div>
+
+    <!-- 场景与提醒卡片 -->
+    <div class="card">
+      <h2>常见使用场景与提醒</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:0.2rem 1rem; margin-bottom:0.8rem;">
+        <span class="notice-badge">🎮 快速试玩</span>
+        <span class="notice-badge">📱 移动端适配</span>
+        <span class="notice-badge">🔄 版本更新</span>
+      </div>
+      <p><strong>场景举例：</strong>周末想找几款休闲游戏试试，直接通过 <a href="https://index-app-ayx.com" class="highlight-link">爱游戏</a> 的分类浏览，不需要逐个搜索。或者你想了解某款游戏的介绍，也可以在这里找到概览。</p>
+      <p><strong>提醒：</strong></p>
+      <ul>
+        <li>注意保护个人隐私，不要在非官方渠道透露账号信息。</li>
+        <li>部分内容可能涉及年龄限制，请根据实际情况判断。</li>
+        <li>如果遇到页面显示异常，可以尝试更换浏览器或清理缓存。</li>
+        <li>平台规则或界面可能会调整，以实际页面为准。</li>
+      </ul>
+    </div>
+
+    <!-- FAQ 摘要区 -->
+    <div class="card">
+      <h2>FAQ 摘要</h2>
+      <div class="faq-item">
+        <div class="faq-q">Q：爱游戏需要下载客户端吗？</div>
+        <div class="faq-a">A：不需要。直接通过浏览器访问网页即可使用，无需额外安装软件。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：页面上的游戏都能免费体验吗？</div>
+        <div class="faq-a">A：大部分内容可以免费浏览或试玩，部分特定服务或道具可能涉及付费，具体以页面标注为准。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：移动端和电脑端体验有区别吗？</div>
+        <div class="faq-a">A：页面针对不同屏幕做了适配，核心功能一致，但部分游戏在手机上操作方式可能略有不同。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q：如何反馈问题或建议？</div>
+        <div class="faq-a">A：通常页面底部或联系页面会有客服邮箱或在线反馈入口，你也可以通过社区渠道留言。</div>
+      </div>
+      <p style="margin-top:0.8rem; font-size:0.95rem;">更多内容可参考网站内的帮助文档。</p>
+    </div>
+
+  </div>
+
+  <!-- 底部链接区 -->
+  <div class="footnote">
+    <p>本页为介绍与参考，具体功能以实际页面为准。</p>
+    <p style="margin-top:0.4rem;">
+      如有需要，可再次访问 <a href="https://index-app-ayx.com" class="highlight-link">爱游戏</a> 获取最新信息。
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
